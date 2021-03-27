@@ -16,17 +16,17 @@ public class NoteTodo {
 
 	@Id
 	private int id;
-	
+
 	@Column(name = "NOTES_TITLE")
 	private String title;
-	
+
 	@Column(name = "NOTES_DESCRIPTION")
 	private String description;
-	
+
 	@Column(name = "NOTES_DATE")
 	@Temporal(TemporalType.DATE)
 	private Date addedDate;
-
+	
 	public NoteTodo() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -39,9 +39,39 @@ public class NoteTodo {
 		this.description = description;
 		this.addedDate = addedDate;
 	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public Date getAddedDate() {
+		return addedDate;
+	}
+
+	public void setAddedDate(Date addedDate) {
+		this.addedDate = addedDate;
+	}
+
 	
-	
-	
-	
-	
+
 }

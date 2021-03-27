@@ -4,4 +4,14 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>SaveNote</servlet-name>
+  	<display-name>SaveNote</display-name>
+  	<description></description>
+  	<servlet-class>com.todo.Controller.SaveNote</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SaveNote</servlet-name>
+  	<url-pattern>/SaveNote</url-pattern>
+  </servlet-mapping>
 </web-app>
