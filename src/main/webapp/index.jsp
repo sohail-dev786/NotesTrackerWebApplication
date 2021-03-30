@@ -15,8 +15,11 @@
 	</div>
 	
 	
-	<center>
-		<h1>Welcome To Note Tracker App</h1>
+	<center class="c1">
+		<h1 class="t1">NIIT</h1>
+		<h1 class="t2">Welcome To Note Tracker Application</h1>
+		<span>MADE BY</span>
+		<h1 class="t3">SOHAIL SHAIKH</h1>
 	</center>
 
 

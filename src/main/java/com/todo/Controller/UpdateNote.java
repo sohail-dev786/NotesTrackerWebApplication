@@ -33,7 +33,7 @@ public class UpdateNote extends HttpServlet {
 
 	response.setContentType("text/html");
 
-	int note_id = Integer.parseInt(request.getParameter("note_id").trim());
+	int note_id = Integer.parseInt(request.getParameter("id").trim());
 
 	String title = request.getParameter("title");
 
@@ -53,7 +53,7 @@ public class UpdateNote extends HttpServlet {
 	session.close();
 	
 	
-	response.sendRedirect("ShowNote.jsp");
+	response.sendRedirect("ShowNotes.jsp");
 	
 	}
 
