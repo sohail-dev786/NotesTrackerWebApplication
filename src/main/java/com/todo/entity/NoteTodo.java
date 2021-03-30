@@ -20,7 +20,7 @@ public class NoteTodo {
 	@Column(name = "NOTES_TITLE")
 	private String title;
 
-	@Column(name = "NOTES_DESCRIPTION")
+	@Column(name = "NOTES_DESCRIPTION",length = 5000)
 	private String description;
 
 	@Column(name = "NOTES_DATE")

@@ -59,6 +59,8 @@ public class SaveNote extends HttpServlet {
 					+ "style='color:green; text-align:center; margin-top:150px;font-size:30px; '>"
 					+ "NOTES SUCCESSFULLY ADDED</h2>");
 			
+			out.println("<h2 style='color:blue; text-align:center; margin-top:160px;font-size:30px;'><a href='ShowNotes.jsp'>SHOW MY NOTES</a></h2>");
+			
 			//response.sendRedirect("index.jsp");
 			
 //			System.out.println(todo.getId());
