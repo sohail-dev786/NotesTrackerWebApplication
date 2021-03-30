@@ -34,7 +34,7 @@
 					%>
 
 					<div class="card mt-3">
-						<h5 class="card-header bg-primary text-white"><%=note1.getId()%></h5>
+						<h5 class="card-header bg-primary text-white">NOTES-ID : &nbsp;<%=note1.getId()%></h5>
 						<div class="card-body">
 							<h3 class="card-title"><%=note1.getTitle()%></h3>
 							<p class="card-text p1-4"><%=note1.getDescription()%></p>
@@ -44,7 +44,7 @@
 								</footer>
 							</blockquote>
 							
-							<a href="#" class="btn btn-outline-warning text-dark font-weight-bold mr-3 btn-lg">EDIT</a>
+							<a href="EditNote.jsp?note_id=<%= note1.getId() %>" class="btn btn-outline-warning text-dark font-weight-bold mr-3 btn-lg">EDIT</a>
 							<a href="DeleteNote?note_id=<%= note1.getId() %>"	class="btn btn-outline-danger text-dark font-weight-bold btn-lg">DELETE</a>
 
 						</div>
