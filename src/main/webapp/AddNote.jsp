@@ -10,6 +10,15 @@
 <body>
 
 	<%@include file="Navbar.jsp"%>
+	<%
+
+	response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");
+	if(session.getAttribute("userEmail")==null)
+	{
+		response.sendRedirect("Login.jsp");
+	}
+	%>
+	
 
 	<center>
 		<h1>Add Notes</h1>
@@ -20,19 +29,20 @@
 			<form action="SaveNote" method="post">
 				<div class="form-group">
 					<label for="title"><strong>Notes Title</strong></label> <input
-						type="text" name="title" required="required" class="form-control" id="title"
-						 placeholder="Enter Notes Title">		
+						type="text" name="title" required="required" class="form-control"
+						id="title" placeholder="Enter Notes Title" autocomplete="off">
 				</div>
-				
+
 				<div class="form-group">
-					<label for="description"><strong>Notes Descriptions</strong></label> 
-					<textarea rows="6" cols="4"
-					class="form-control" name="description" id="description" required="required"
-					placeholder="Enter Notes Description"></textarea>
+					<label for="description"><strong>Notes
+							Descriptions</strong></label>
+					<textarea rows="6" cols="4" class="form-control" name="description"
+						id="description" required="required"
+						placeholder="Enter Notes Description"></textarea>
 				</div>
-		
-				<div class="container text-center" >
-				<button type="submit" class="btn btn-primary btn-lg">Save</button>
+
+				<div class="container text-center">
+					<button type="submit" class="btn btn-primary btn-lg">Save</button>
 				</div>
 			</form>
 		</div>

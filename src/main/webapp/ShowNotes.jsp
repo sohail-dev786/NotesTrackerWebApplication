@@ -14,6 +14,14 @@
 </head>
 <body>
 	<%@include file="Navbar.jsp"%>
+	<%
+
+	response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");
+	if(session.getAttribute("userEmail")==null)
+	{
+		response.sendRedirect("Login.jsp");
+	}
+	%>
 
 	<center>
 		<h1>Show Notes</h1>

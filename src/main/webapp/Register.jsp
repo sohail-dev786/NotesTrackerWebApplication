@@ -10,8 +10,70 @@
 <body>
 
 <%@include file="Navbar.jsp" %>
-<center>
-<h1>Register</h1>
-</center>
+<%
+response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");
+%>>
+<main>
+  <div class="container offset-md-4">
+        
+          <div class="row">
+       
+                <form action="/UserRegister"  method="post"  class="text-center border border-light p-5">
+        			<div>
+                <!--  	<span class="fa fa-user-plus  fa-3x fa-spin "></span> -->
+								
+                	  <p class="h4 mb-3 signup">Sign up</p>
+        			</div>
+                  <div class="form-row mb-4">
+                    
+                    <div class="col">
+                    
+                      <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name" name="fname" >
+                   
+                    </div>
+                    
+                    
+                    <div class="col">
+                   
+                      <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name" name="lname">
+                   
+                    </div>
+                  </div>
+        
+                  <!-- E-mail -->
+                 
+                  <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail" name="uemail">
+        
+                  
+                  
+                  
+                  <!-- Password -->
+                 
+                 
+                 
+                  <input type="password" id="defaultRegisterFormPassword" class="form-control mb-3" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock" name="password">
+        
+        
+                  <!-- Sign up button -->
+                
+                  <button class="btn btn-primary my-4 btn-block waves-effect waves-light" type="submit">Sign in</button>
+
+
+					<div class="container create text-center">
+						<p class="text-center class="font-weight-bold">
+							<a href="Login.jsp">Existing User ! Login Here</a>
+						</p>
+					</div>
+
+				</form> 
+                
+                  
+            </div>
+                     
+            </div>
+          
+ </main>          
+            
+
 </body>
 </html>

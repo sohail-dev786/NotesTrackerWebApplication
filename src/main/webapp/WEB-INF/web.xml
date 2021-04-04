@@ -22,6 +22,18 @@
   	<description></description>
   	<servlet-class>com.todo.Controller.UpdateNote</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>loginCheck</servlet-name>
+  	<display-name>loginCheck</display-name>
+  	<description></description>
+  	<servlet-class>com.todo.Controller.loginCheck</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UserRegister</servlet-name>
+  	<display-name>UserRegister</display-name>
+  	<description></description>
+  	<servlet-class>com.todo.Controller.UserRegister</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>SaveNote</servlet-name>
   	<url-pattern>/SaveNote</url-pattern>
@@ -33,5 +45,13 @@
   <servlet-mapping>
   	<servlet-name>UpdateNote</servlet-name>
   	<url-pattern>/UpdateNote</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>loginCheck</servlet-name>
+  	<url-pattern>/loginCheck</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UserRegister</servlet-name>
+  	<url-pattern>/UserRegister</url-pattern>
   </servlet-mapping>
 </web-app>
