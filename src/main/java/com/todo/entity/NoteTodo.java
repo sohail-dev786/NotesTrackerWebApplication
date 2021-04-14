@@ -29,7 +29,6 @@ public class NoteTodo {
 	
 	public NoteTodo() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public NoteTodo(String title, String description, Date addedDate) {

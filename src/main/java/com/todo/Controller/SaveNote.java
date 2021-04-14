@@ -55,6 +55,7 @@ public class SaveNote extends HttpServlet {
 			transaction.commit();
 			session.close();
 			
+			
 			out.println("<h2 "
 					+ "style='color:green; text-align:center; margin-top:150px;font-size:30px; '>"
 					+ "NOTES SUCCESSFULLY ADDED</h2>");

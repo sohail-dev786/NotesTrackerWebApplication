@@ -23,19 +23,9 @@ response.setHeader("Cache-Control","no-cache,no-store,must-revalidate");
       <% } %>
       
       <% if(session_username!=null)  {%>
-      <a class="btn btn-outline-warning mr-2" > Welcome <%= session.getAttribute("userEmail") %> </a>
-	  <a class="btn btn-outline-danger" href="Logout.jsp">Log out</a>
+      <a class="btn btn-warning font-weight-bold mr-2 wcf" > Welcome :<%= session.getAttribute("userEmail") %> </a>
+	  <a class="btn btn-danger" href="Logout.jsp">Log out</a>
 	  
 	  <% } %>
-	  
-<%-- 	   <%
-	  String userEmail=(String)request.getSession().getAttribute("userEmail");
-	   
-	   if(userEmail==null)
-	   {
-		   response.sendRedirect("Login.jsp");
-	   }
-	   
-	  %>
- --%>
+
 </div>

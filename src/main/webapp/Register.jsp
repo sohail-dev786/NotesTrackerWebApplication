@@ -17,8 +17,7 @@ response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");
   <div class="container offset-md-4">
         
           <div class="row">
-       
-                <form action="/UserRegister"  method="post"  class="text-center border border-light p-5">
+                <form action="UserRegister"  method="post"  class="text-center border border-light p-5">
         			<div>
                 <!--  	<span class="fa fa-user-plus  fa-3x fa-spin "></span> -->
 								
@@ -27,32 +26,22 @@ response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");
                   <div class="form-row mb-4">
                     
                     <div class="col">
-                    
-                      <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name" name="fname" >
-                   
+                      <input type="text" id="fname" class="form-control" placeholder="First Name" name="fname" >
                     </div>
-                    
-                    
+  
                     <div class="col">
-                   
-                      <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name" name="lname">
-                   
+                      <input type="text" id="lname" class="form-control" placeholder="Last Name" name="lname">
                     </div>
                   </div>
         
+        
                   <!-- E-mail -->
                  
-                  <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail" name="uemail">
-        
-                  
-                  
-                  
+                  <input type="email" id="uemail" class="form-control mb-4" placeholder="E-mail" name="uemail">
+           
                   <!-- Password -->
-                 
-                 
-                 
-                  <input type="password" id="defaultRegisterFormPassword" class="form-control mb-3" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock" name="password">
-        
+           
+                  <input type="password" id="upassword" class="form-control mb-3" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock" name="upassword">
         
                   <!-- Sign up button -->
                 
@@ -65,9 +54,7 @@ response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");
 						</p>
 					</div>
 
-				</form> 
-                
-                  
+				</form>     
             </div>
                      
             </div>

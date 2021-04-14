@@ -23,7 +23,6 @@ public class loginCheck extends HttpServlet {
 		
 		PrintWriter out=response.getWriter();
 		response.setContentType("text/html");
-		
 	
 		String uemail=request.getParameter("uemail");
 		String upass=request.getParameter("upass");
@@ -42,7 +41,7 @@ public class loginCheck extends HttpServlet {
 			response.sendRedirect("Login.jsp");
 		}
 
-
+		
 		   
 
 
