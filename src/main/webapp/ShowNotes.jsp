@@ -33,7 +33,7 @@
 			<div class="row">
 				<div class="col-12">
 					<%
-						Session session1 = FactoryProvider.getSessionFactory().openSession();
+					Session session1 = FactoryProvider.getSessionFactory().openSession();
 
 					Query query = session1.createQuery("from NoteTodo");
 					List<NoteTodo> noteList = query.list();

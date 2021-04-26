@@ -29,7 +29,7 @@ response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");
 						<div class="col">
 						<label class="mr-4 font-weight-bold">User Email</label>
 						<input type="email" id="email"
-							class="form-control mb-4" placeholder="E-mail" name="uemail" autocomplete="on">
+							class="form-control mb-4" placeholder="E-mail" name="uemail" autocomplete="off">
 						</div>
 						
 						<div class="col">

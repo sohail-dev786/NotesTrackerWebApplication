@@ -56,13 +56,13 @@ public class SaveNote extends HttpServlet {
 			session.close();
 			
 			
-			out.println("<h2 "
-					+ "style='color:green; text-align:center; margin-top:150px;font-size:30px; '>"
-					+ "NOTES SUCCESSFULLY ADDED</h2>");
-			
-			out.println("<h2 style='color:blue; text-align:center; margin-top:160px;font-size:30px;'><a href='ShowNotes.jsp'>SHOW MY NOTES</a></h2>");
-			
-			//response.sendRedirect("index.jsp");
+//			out.println("<h2 "
+//					+ "style='color:green; text-align:center; margin-top:150px;font-size:30px; '>"
+//					+ "NOTES SUCCESSFULLY ADDED</h2>");
+//			
+//			out.println("<h2 style='color:blue; text-align:center; margin-top:160px;font-size:30px;'><a href='ShowNotes.jsp'>SHOW MY NOTES</a></h2>");
+//			
+			response.sendRedirect("SaveNote.jsp");
 			
 //			System.out.println(todo.getId());
 //			System.out.println(todo.getTitle());

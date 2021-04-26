@@ -30,20 +30,19 @@ public class loginCheck extends HttpServlet {
 		System.out.println(uemail);
 		System.out.println(upass);
 		
-		
-		if(uemail.equals("Sohail@gmail.com")&& upass.equals("123"))
+		LoginDao dao=new  LoginDao();
+	
+
+		if(dao.loginCheck(uemail, upass))
 		{
 			request.getSession().setAttribute("userEmail", uemail);
 			response.sendRedirect("index.jsp");
 		}
 		else
 		{
+			request.setAttribute("error", "USER NAME & PASSWORD IS INCORRECT !!");
 			response.sendRedirect("Login.jsp");
 		}
-
-		
-		   
-
 
 
 	

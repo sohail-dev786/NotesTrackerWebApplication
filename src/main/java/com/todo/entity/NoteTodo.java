@@ -6,6 +6,7 @@ import java.util.Random;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -26,6 +27,9 @@ public class NoteTodo {
 	@Column(name = "NOTES_DATE")
 	@Temporal(TemporalType.DATE)
 	private Date addedDate;
+	
+	@ManyToOne
+	private User user;
 	
 	public NoteTodo() {
 		super();
